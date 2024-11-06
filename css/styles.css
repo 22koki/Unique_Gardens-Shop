@@ -1,0 +1,237 @@
+/* Base styles for the category pages */
+body {
+    font-family: 'Arvo', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Josefin Slab', serif;
+}
+
+.category-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #34495e;
+    margin: 20px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.product-item:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.product-item img {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.product-item h3 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.price-tag {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #001107;
+    margin-top: 10px;
+    display: block;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #474242;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn:hover {
+    background-color: #474242;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.go-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.go-home-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.go-home-button:hover {
+    background-color: #444;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Page-specific colors */
+.pots-page .category-title { color: #8B5E3C; }
+.bags-page .category-title { color: #556B2F; }
+.flowers-page .category-title { color: #C71585; }
+.gifts-page .category-title { color: #4B0082; }
+
+footer {
+    color: #777;
+}
+/* Bags Section Styling */
+.bags-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.bags-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.bags-section .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.bags-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.bag-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bag-item:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.bag-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.bag-item h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.bag-item p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9900; /* orange color */
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #e68a00; /* darker orange when hovered */
+}
+.go-home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.go-home-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.go-home {
+    text-align: center;
+    margin-top: 30px;
+}
+.flash-sale .slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* smooth transition between images */
+}
+
+.flash-sale .slide-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
