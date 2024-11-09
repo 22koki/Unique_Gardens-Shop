@@ -225,13 +225,47 @@ footer {
     text-align: center;
     margin-top: 30px;
 }
-.flash-sale .slide-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* smooth transition between images */
+.flash-sale {
+    text-align: center;
+    margin: 20px auto;
 }
 
-.flash-sale .slide-container img {
-    width: 100%;
+.sale-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5252; /* Bright red for emphasis */
+    margin-bottom: 10px;
+}
+
+.carousel {
+    width: 80%; /* Smaller carousel */
+    margin: 0 auto;
+}
+
+.carousel .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel .item img {
+    width: 120px; /* Smaller image width */
     height: auto;
-    display: block;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.carousel .item img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.carousel-control {
+    width: 5%; /* Smaller control buttons */
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+    color: #333;
+    font-size: 20px;
 }
